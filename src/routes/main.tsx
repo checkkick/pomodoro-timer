@@ -1,11 +1,9 @@
 import DefaultLayout from "@/layout/default"
 
-function Main() {
+export default function Main() {
    return (
       <DefaultLayout>
          <div></div>
       </DefaultLayout>
    )
 }
-
-export default Main
