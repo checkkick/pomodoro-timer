@@ -1,10 +1,10 @@
-import { Navigation } from "@/components/layout/navigation"
+import DefaultLayout from "@/layout/default"
 
 function Main() {
    return (
-      <>
-         <Navigation />
-      </>
+      <DefaultLayout>
+         <div></div>
+      </DefaultLayout>
    )
 }
 
