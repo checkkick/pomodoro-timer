@@ -1,4 +1,5 @@
 @import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
 
 .columns {
    display: flex;
@@ -6,4 +7,28 @@
    flex-direction: row;
    justify-content: space-between;
    gap: 15px;
+}
+
+.tasks {
+   &__title {
+      @include defineFontSFUIDisplay(700, 24px, 33px);
+   }
+
+   &__list {
+      margin: 0;
+      padding: 0 1rem;
+   }
+
+   &__item {
+      color: $grafit;
+
+      &::marker {
+         color: $red-dark;
+      }
+   }
+
+   &__text {
+      @include defineFontSFUIDisplay(400, 16px, 33px);
+      padding-left: 10px;
+   }
 }
