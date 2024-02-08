@@ -1,0 +1,7 @@
+@mixin defineFontSFUIDisplay($weight, $size, $lh) {
+   font-family: "SF UI Display", Helvetica, Arial, sans-serif;
+   font-weight: $weight;
+   font-size: $size;
+   line-height: $lh;
+   margin: 0;
+}
