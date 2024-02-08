@@ -1,0 +1,9 @@
+@import '@assets/styles/variables.scss';
+
+.columns {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 15px;
+}
