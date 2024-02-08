@@ -10,7 +10,7 @@ export function Navigation() {
                <li className={styles.nav__item}>
                   <a href="/" className={styles.logo}>
                      <img src={TomatoLogo} className={styles.logo__image} alt="tomato logo" />
-                     <p className={styles.logo__text}>pomodoro_box</p>
+                     <h1 className={styles.logo__text}>pomodoro_box</h1>
                   </a>
                </li>
                <li className={styles.nav__item}>
