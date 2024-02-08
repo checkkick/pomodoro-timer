@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/layout/Navigation";
+import { Navigation } from "@/components/Layout/Navigation";
 import { ReactElement } from "react";
 
 export default function DefaultLayout({ children }: { children: ReactElement }) {
