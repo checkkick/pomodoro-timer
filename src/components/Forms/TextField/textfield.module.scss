@@ -1,0 +1,16 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.input {
+   @include defineFontSFUIDisplay(300, 16px, 17px);
+   color: $grafit;
+   width: 370px;
+   border: none;
+   outline: none;
+   padding: 19px 15px;
+   background-color: $grayF4;
+
+   &::placeholder {
+      color: $gray99;
+   }
+}
