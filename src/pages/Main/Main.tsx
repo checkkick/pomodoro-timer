@@ -1,3 +1,4 @@
+import { TaskList } from '@/components/TaskList';
 import styles from './main.module.scss'
 
 export function MainPage() {
@@ -36,7 +37,7 @@ export function MainPage() {
                   </li>
                </ul>
 
-               {/* Форма с добавлением задач */}
+               <TaskList />
             </div>
 
             {/* Форма с запуском таймера */}
