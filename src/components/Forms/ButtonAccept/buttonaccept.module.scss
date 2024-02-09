@@ -1,0 +1,19 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.btn {
+   @include defineFontSFUIDisplay(500, 16px, 17px);
+   color: $white;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background-color: $green;
+   transition: 0.2s background-color ease-in-out;
+   padding: 19px 50px;
+
+   &:focus-visible,
+   &:active,
+   &:hover {
+      background-color: $green-dark;
+   }
+}
