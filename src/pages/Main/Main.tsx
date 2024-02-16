@@ -1,5 +1,6 @@
 import { TaskList } from '@/components/TaskList';
 import styles from './main.module.scss'
+import { TimerLayout } from '@/components/TimerLayout';
 
 export function MainPage() {
    return (
@@ -40,7 +41,7 @@ export function MainPage() {
                <TaskList />
             </div>
 
-            {/* Форма с запуском таймера */}
+            <TimerLayout />
          </div>
       </div>
    );

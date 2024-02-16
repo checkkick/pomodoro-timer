@@ -1,0 +1,34 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.display {
+   background-color: $grayF4;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+
+   &__bar {
+      color: $white;
+      background-color: $grayC4;
+      padding: 19px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+
+.title {
+   @include defineFontSFUIDisplay(700, 16px, 17px);
+}
+
+.subtitle {
+   @include defineFontSFUIDisplay(400, 16px, 17px);
+}
+
+.task {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 70px 170px 105px;
+}
