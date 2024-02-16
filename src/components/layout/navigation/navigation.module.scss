@@ -31,12 +31,31 @@
 
 .statistic {
    text-decoration: none;
-   display: flex;
-   align-items: center;
+   display: grid;
+   grid-template-columns: repeat(2, auto);
    gap: 5px;
 
+   &:hover,
+   &:active,
+   &:focus-visible {
+      .statistic__text {
+         color: $red-dark;
+      }
+
+      .statistic__image path {
+         fill: $red-dark;
+      }
+   }
+
+   &__image {
+      & path {
+         transition: 0.2s fill ease-in-out;
+      }
+   }
+
    &__text {
-      @include defineFontSFUIDisplay(400, 16px, 17px);
+      @include defineFontSFUIDisplay(400, 16px, 18px);
       color: $red-primary;
+      transition: 0.2s color ease-in-out;
    }
 }

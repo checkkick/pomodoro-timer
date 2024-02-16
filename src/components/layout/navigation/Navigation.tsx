@@ -1,6 +1,5 @@
 import styles from './Navigation.module.scss'
 import TomatoLogo from '@assets/images/tomato.svg'
-import StatisticLogo from '@assets/images/equalizer.svg'
 
 export function Navigation() {
    return (
@@ -15,7 +14,11 @@ export function Navigation() {
                </li>
                <li className={styles.nav__item}>
                   <a href="/" className={styles.statistic}>
-                     <img src={StatisticLogo} className={styles.statistic__image} alt="statistic logo" />
+                     <svg className={styles.statistic__image} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 16H10V0H6V16ZM0 16H4V8H0V16ZM12 5V16H16V5H12Z" fill="#DC3E22" />
+                     </svg>
+
+
                      <p className={styles.statistic__text}>Статистика</p>
                   </a>
                </li>
