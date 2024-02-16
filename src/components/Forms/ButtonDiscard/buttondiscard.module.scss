@@ -1,0 +1,26 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.btn {
+   @include defineFontSFUIDisplay(500, 16px, 17px);
+   color: $red-primary;
+   cursor: pointer;
+   border: none;
+   outline: 2px solid $red-primary;
+   outline-offset: -2px;
+   background-color: transparent;
+   transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out;
+   padding: 19px 50px;
+
+   &:focus-visible:not(:disabled),
+   &:active:not(:disabled),
+   &:hover:not(:disabled) {
+      color: $white;
+      background-color: $red-primary;
+   }
+
+   &:disabled {
+      color: $grayC4;
+      outline: 2px solid $grayC4;
+   }
+}
