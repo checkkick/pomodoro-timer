@@ -1,0 +1,25 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.btn {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   border: none;
+   border-radius: 50%;
+   outline: none;
+   background-color: transparent;
+   padding: 0;
+
+   & circle {
+      transition: 0.2s fill ease-in-out;
+   }
+
+   &:focus-visible,
+   &:active,
+   &:hover {
+      & circle {
+         fill: $green-dark;
+      }
+   }
+}

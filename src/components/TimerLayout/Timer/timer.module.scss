@@ -2,9 +2,16 @@
 @import '@assets/styles/mixins.scss';
 
 .block {
+   position: relative;
    display: flex;
    align-items: center;
    flex-direction: column;
+}
+
+.addBtn {
+   position: absolute;
+   top: 65px;
+   right: -70px;
 }
 
 .watches {
