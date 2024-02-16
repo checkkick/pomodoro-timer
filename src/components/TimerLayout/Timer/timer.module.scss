@@ -1,0 +1,29 @@
+@import '@assets/styles/variables.scss';
+@import '@assets/styles/mixins.scss';
+
+.block {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.watches {
+   @include defineFontSFUIDisplay(200, 150px, 179px);
+   margin-bottom: 9px;
+}
+
+
+.taskName {
+   @include defineFontSFUIDisplay(400, 16px, 17px);
+   margin-bottom: 32px;
+
+   &__accent {
+      color: $gray99;
+   }
+}
+
+.controls {
+   display: flex;
+   align-items: center;
+   gap: 25px;
+}
